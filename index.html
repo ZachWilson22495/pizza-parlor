@@ -13,7 +13,7 @@
 <body>
   <div class="jumbotron">
     <h1>Papa G'Zulbee's Human Pizzaria</h1>
-    <h2>Authentic Human Italian Cuisine in Exchange for Currency</h2>
+    <h2>Authentic Human Italian Cuisine</h2>
   </div>
   <div class= "container">
     <form id="za">
@@ -23,10 +23,14 @@
             <input type="checkbox" name="topping" value="meat">
             Fauna
           </label>
+      </div>
+      <div class="form-group">
           <label>
             <input type="checkbox" name="topping" value="veg">
             Flora
           </label>
+      </div>
+      <div class="form-group">
           <label>
             <input type="checkbox" name="topping" value="mush">
             Fungus
@@ -35,18 +39,22 @@
       <div class="form-group">
         <h3>Sizes:</h3>
           <label>
-            <input type="checkbox" name="size" value="small">
+            <input type="radio" name="size" value="small">
             Digestion Supplement
           </label>
+      </div>
+      <div class="form-group">
           <label>
-            <input type="checkbox" name="size" value="medium">
+            <input type="radio" name="size" value="medium" checked>
             Human Median
-            </label>
+          </label>
+      </div>
+      <div class="form-group">
           <label>
-            <input type="checkbox" name="size" value="large">
+            <input type="radio" name="size" value="large">
             Beyond Gastral Capacity
           </label>
-        </div>
+      </div>
       <button type="submit" class="btn btn-dark">Demand</button>
     </form>
   </div>

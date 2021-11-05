@@ -29,4 +29,35 @@ function Pizza(toppings, size) {
 }
 
 Pizza.prototype.value = function() {
+  if (this.toppings.includes(meat)) {
+    this.price += 6;
+  } else {
+    this.price;
+  }
+  if (this.toppings.includes(veg)) {
+    this.price += 4;
+  } else {
+    this.price;
+  }
+  if (this.toppings.includes(mush)) {
+    this.price += 3;
+  } else {
+    this.price;
+  }
+
+  if (this.size === small) {
+    this.price -= 5;
+  } else if (this.size === large) {
+    this.price += 5;
+  } else {
+    this.price;
+  }
+  return this.price;
+};
+
+function reveal(yourPizza) {
+  $("#checkout").show();
+  $(".toppings").html(yourPizza.toppings);
+  $(".size").html(yourPizza.size);
+  $(".price").html(yourPizza.price);
 }
