@@ -1,27 +1,3 @@
-//Step 1. Build a constructor for Pizza objects. Have it contain toppings and size as properties
-
-//Step 2. Friggin' FOCUS!!!
-
-//Step 3. Decide on Toppings and Sizes below:
-
-Toppings:
-Fauna (meat)
-Flora (veg)
-Fungus (mush)
-
-Sizes:
-Digestive Supplement
-Authentic Human Experience
-Beyond Gastral Capacity
-
-
-
-//Step 4. Build form that contains said choices.
-
-//Step 5. Add numeric values to toppings and sizes so that price can fluctuate.
-
-//Step 6. Show price to user upon submitting.
-
 function Pizza(toppings, size) {
   this.toppings = [];
   this.size = size;
@@ -61,3 +37,17 @@ function reveal(yourPizza) {
   $(".size").html(yourPizza.size);
   $(".price").html(yourPizza.price);
 }
+
+$(document).ready(function() {
+  $("form#za").submit(function(event) {
+    event.preventDefault();
+    let pizzaToppings = $("input:checkbox[name=topping]:checked").val();
+    let pizzaSize = $("input:radio[name=size]:checked").val();
+    $("input:checkbox[name=topping]:checked").val("");
+    $("input:radio[name=size]:checked").val("");
+    let yourPizza = new Pizza(pizzaToppings, pizzaSize);
+    yourPizza.value();
+    reveal(yourPizza);
+    $("#za").hide();
+  });
+})

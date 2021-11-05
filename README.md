@@ -1,10 +1,8 @@
-# _[APPLICATION NAME]_
+# _[pizza-parlor]_
 
 #### By **Zach Wilson**
 
-#### _[DESCRIPTION OF APPLICATION]_
-
-#### Link to __________ on GitHub Pages
+#### _[A Fictional Pizza Parlor that is NOT run by Aliens]_
 
 ## Technologies Used
 
@@ -16,12 +14,12 @@
 
 ## Description
 
-_[FURTHER DESCRIPTION OF APPLICATION]_
+_[Select between your choice of toppings and size for a Pizza built exactly to your tastes. The price will be revealed after your selections are made.]_
 
 ## Setup/Installation Requirements
 
 * Clone this repository to your Desktop
-* Navigate to the new folder titled 'language-suggestion' and open it
+* Navigate to the new folder titled 'pizza-parlor' and open it
 * Open index.html with your browser
 * Answer the questions provided and click 'Submit' to see your answer
 
