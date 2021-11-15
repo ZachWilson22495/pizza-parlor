@@ -1,15 +1,39 @@
 body {
   background-color: bisque;
+  font-size: x-large;
 };
 
 h2 {
-  font-style: italic
+  font-style: italic;
 };
 
 .jumbotron {
-  text-align: center
+  text-align: center;
 };
 
 #checkout {
-  display: none
+  display: none;
 };
+
+.container {
+  padding: 500px;
+}
+
+.photo {
+  float: right;
+}
+
+.price {
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.toppings {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.size {
+  font-style: italic;
+  font-weight: 500;
+}

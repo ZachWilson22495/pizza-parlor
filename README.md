@@ -52,3 +52,41 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ### Feel free to fix/edit all contained code to your liking. If you encounter and problems, contact me at zwilson22495@gmail.com
+
+
+---------------------------------------
+
+TEST LOG
+
+Describe: Pizza(size)
+
+  Test: "Should show testPizza as 10"
+  Code:
+  let testPizza = 10
+  Expected Output: 10
+
+  Test: "Should recognize testPizza's size as large"
+  Code:
+  function Pizza(size) {
+    this.size = size;
+  }
+  const large = 10;
+  let testPizza = new Pizza(large);
+  Expected Output: 10
+
+  Test: "Should return different numbers depending on pizza size"
+  Code:
+  function Pizza(size) {
+    this.size = size;
+  }
+  const large = 10;
+  const small = 5
+  let bigPizza = new Pizza(large);
+  let smallPizza = new Pizza(small);
+  Expected Output: 10 for bigPizza, 5 for smallPizza
+
+  Test: "Should add both meat and mushrooms to testPizza"
+  Code: 
+  let testPizza = []
+  testArray.push("meat, mushrooms")
+  Expected Output: testPizza = "meat, mushrooms"
