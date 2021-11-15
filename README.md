@@ -25,7 +25,7 @@ _[Select between your choice of toppings and size for a Pizza built exactly to y
 
 ## Known Bugs
 
-Currently no known bugs.
+Checkout tab currently flashes for a brief moment underneath submit button when first loading the page.
 
 ## License
 
